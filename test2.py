@@ -3,13 +3,13 @@ from streamlit_drawable_canvas import st_canvas
 from PIL import Image
 import google.generativeai as genai
 import io
-import json # Import the JSON library
+import json 
 import login
 
-# Page config must be the first Streamlit command
+
 st.set_page_config(page_title="AI Math Assistant", page_icon="🧮", layout="wide")
 
-# Colors updated for the "Electric Blue Neon" theme
+
 st.markdown("""
 <style>
 header[data-testid="stHeader"] {
@@ -32,69 +32,8 @@ header[data-testid="stHeader"]::after {
 </style>
 """, unsafe_allow_html=True)
 
-# Colors and text colors updated for the "Electric Blue Neon" theme
-page_bg_img = """
-<style>
-h1 {
-    margin-top: -130px !important; 
-}
-/* Main app background */
-[data-testid="stAppViewContainer"] {
-    background-color: #0D0D2B;  /* Deep Space Blue Background */
-}
-/* Header background */
-[data-testid="stHeader"] {
-    background-color: #1A1A3D; /* Dark Navy */
-}
-/* Sidebar background */
-[data-testid="stSidebar"] {
-    background-color: #1A1A3D;  /* Dark Navy */
-}
 
-/* --- TEXT COLOR STYLES --- */
 
-/* General text color for the main app body */
-[data-testid="stAppViewContainer"] p, 
-[data-testid="stAppViewContainer"] li,
-[data-testid="stAppViewContainer"] .st-emotion-cache-12w0qpk e1nzilvr5 {
-    color: #C0C0FF !important; /* Light Lavender */
-}
-
-/* General text color for sidebar (instructions, etc.) */
-[data-testid="stSidebar"] p, 
-[data-testid="stSidebar"] li {
-    color: #C0C0FF !important; /* Light Lavender */
-}
-/* Headers in sidebar and main content */
-h1, h2, h3, h4 {
-    color: #33E6F6 !important; /* Electric Blue */
-}
-/* Widget labels (slider, color picker, etc.) */
-label, .st-emotion-cache-1q8dd3e {
-    color: #C0C0FF !important;
-}
-
-/* Specific fix for st.metric label color */
-div[data-testid="stMetricLabel"] > div {
-    color: #C0C0FF !important;
-}
-
-/* --- THIS IS THE NEW RULE --- */
-/* Specific fix for st.metric value color */
-div[data-testid="stMetricValue"] {
-    color: #FFFFFF !important; /* White */
-}
-
-/* Specific and robust fix for the checkbox label color */
-label[data-baseweb="checkbox"] > div:last-child {
-    color: #C0C0FF !important;
-}
-
-/* Make slider value visible */
-div[data-baseweb="slider"] > div > div {
-    color: #FFFFFF !important;
-}
-</style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
