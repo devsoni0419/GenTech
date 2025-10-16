@@ -1,0 +1,11 @@
+cookie:
+  name: "my app"
+  key: "12345"
+  expiry_days: 30
+credentials:
+  usernames:
+    rishi:
+      first_name: 'rishi'
+      last_name: 'bisht'
+      password: '1234'
+      
