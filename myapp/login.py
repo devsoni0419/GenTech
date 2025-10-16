@@ -3,7 +3,7 @@ import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
 
-with open('project/config.yaml') as file:
+with open('myapp/config.yaml') as file:
     config=yaml.load(file,Loader=SafeLoader)
     
 authenticator=stauth.Authenticate(
@@ -47,7 +47,7 @@ def login_register():
                 if email and username:
                     st.success('successfully Registered')
                     
-                    with open('project/config.yaml','w') as file:
+                    with open('myapp/config.yaml','w') as file:
                         yaml.dump(config,file,default_flow_style=False)
                     st.session_state['show_register']=False
                     
