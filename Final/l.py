@@ -4,7 +4,7 @@ import yaml
 from yaml.loader import SafeLoader
 
 def login_register():
-    with open('config.yaml') as file:
+    with open('Final/config.yaml') as file:
         config=yaml.load(file,Loader=SafeLoader)
         
     authenticator=stauth.Authenticate(
@@ -46,7 +46,7 @@ def login_register():
                 if email and username:
                     st.success('successfully Registered')
                     
-                    with open('config.yaml','w') as file:
+                    with open('Final/config.yaml','w') as file:
                         yaml.dump(config,file,default_flow_style=False)
                     st.session_state['show_register']=False
                     
