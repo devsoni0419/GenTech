@@ -158,14 +158,7 @@ def get_draw_session():
             
         
 
-# get_gemini_model(API_Key)
-# with open(r'C:\Users\WELCOME\OneDrive\Documents\.jpg\photosunny.jpg','rb') as f:
-#     img = Image.open(f,'r')
-#     print(type(img))
-    # get_image_response(img)
-# print(genai.configure())
-# get_question()
-# get_chat_session()
+
 with st.sidebar:
     mode=st.radio('Choose Mode',options=['Draw','Upload','Chat'])
     if mode=='Draw':

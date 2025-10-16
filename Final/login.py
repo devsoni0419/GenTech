@@ -46,7 +46,7 @@ def login_register():
                 if email and username:
                     st.success('successfully Registered')
                     
-                    with open('myapp/config.yaml','w') as file:
+                    with open('config.yaml','w') as file:
                         yaml.dump(config,file,default_flow_style=False)
                     st.session_state['show_register']=False
                     
