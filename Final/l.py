@@ -2,17 +2,17 @@ import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
-with open('config.yaml') as file:
-    config=yaml.load(file,Loader=SafeLoader)
-    
-authenticator=stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days']
-)
 
 def login_register():
+    with open('config.yaml') as file:
+        config=yaml.load(file,Loader=SafeLoader)
+        
+    authenticator=stauth.Authenticate(
+        config['credentials'],
+        config['cookie']['name'],
+        config['cookie']['key'],
+        config['cookie']['expiry_days']
+    )
 
     if 'authentication_status' not in st.session_state:
         st.session_state['authentication_status']=False

@@ -1,11 +1,17 @@
 cookie:
-  name: "my app"
-  key: "12345"
   expiry_days: 30
+  key: '12345'
+  name: my app
 credentials:
   usernames:
+    devsoni0419:
+      email: devsoni0419@gmail.com
+      first_name: Dev
+      last_name: Soni
+      logged_in: false
+      password: $2b$12$BfR.xUvuehH4372oHzqrDOhwD.rCUytfF0fs90hT3BM/BwgLheSgu
+      roles: null
     rishi:
-      first_name: 'rishi'
-      last_name: 'bisht'
-      password: '1234'
-      
+      first_name: rishi
+      last_name: bisht
+      password: $2b$12$ZzI2DmiP7gp8jB.TK6J.5ebQ1SCAr3Z1kkveKjGowxTMDziY0RqK2
