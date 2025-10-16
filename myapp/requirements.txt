@@ -1,4 +1,0 @@
-# streamlit
-# streamlit_drawable_canvas
-# yaml
-streamlit_authenticator

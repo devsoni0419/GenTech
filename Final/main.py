@@ -16,12 +16,12 @@ st.set_page_config(page_title="AI Math Assistant", layout="wide")
 st.markdown("""
 <style>
 header[data-testid="stHeader"] {
-    background-color: #1A1A3D; /* Dark Navy */
+    background-color: #1A1A3D; 
     height: 70px;
-    color: #33E6F6; /* Electric Blue */
+    color: #33E6F6; 
     text-align: center;
     position: relative;
-    border-bottom: 2px solid #33E6F6; /* Electric Blue Border */
+    border-bottom: 2px solid #33E6F6; 
 }
 header[data-testid="stHeader"]::after {
     content: "AI-Powered Math Assistant";
